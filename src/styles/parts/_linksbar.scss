@@ -1,0 +1,51 @@
+@import '../constants/color';
+
+/* Left Bar Links Area */
+.left-bar-links {
+    &.open {
+        transform: translateX(0vw);
+        transition: .3s ease-in-out;
+    }
+    padding-top: 20vh;
+    width: 15vw;
+    background: rgba(0,0,0,0.5);
+    color: $link-text;
+    transform: translateX(-20vw);
+    z-index: 5;
+}
+ul {
+    background: $link-bg;
+    margin: 0;
+    padding: 5px;
+}
+li {
+    list-style-type: none;
+    margin: 5px;
+    padding: 0;
+}
+a {
+    &:hover {
+        text-shadow: 0 0 10px white;
+    }
+    text-decoration: none;
+    color: inherit;
+}
+.links.cat1 {
+    display: none;
+}
+.links.cat2 {
+    margin-top: 1.2rem;
+    display: none;
+}
+.links.cat3 {
+    margin-top: 2.4rem;
+    display: none;
+}
+.links.cat4 {
+    margin-top: 3.6rem;
+    display: none;
+}
+
+.spacer {
+    padding-top: 4rem;
+}
