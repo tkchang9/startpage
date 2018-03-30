@@ -42,11 +42,11 @@ function linkShow() {
 // Weather
 const city = 6167865; //Toronto
 const API_KEY = 'decced15b101d1b855dac9a0d7c4d10e';
-const API_URL = 'http://api.openweathermap.org/data/2.5/weather?id=';
+const API_URL = 'https://api.openweathermap.org/data/2.5/weather?id=';
 const weatherDiv = document.getElementsByClassName('weather')[0];
 fetch(API_URL+city+'&units=metric'+'&APPID='+API_KEY).then(response=>response.json()).then(
     json => {
-        console.log(json);
+        // console.log(json);
         const temperature = parseInt(json.main.temp);
         const icon = json.weather[0].id;
         // console.log('temperature', temperature);
