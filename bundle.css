@@ -1,22 +1,25 @@
 @charset "UTF-8";
 /* Info */
 .central-info {
-  padding-left: 5vw;
-  padding-top: 50vh;
+  flex: 1;
+  justify-self: flex-end;
+  padding: 5rem;
+  align-self: flex-end;
   font-family: Ubuntu;
   color: White; }
 
 .time {
-  font-size: 7rem;
+  font-size: 9vw;
   font-weight: bold;
-  text-shadow: 5px 5px #AA3939;
-  text-align: center; }
+  text-shadow: 1px 1px #AA3939, 2px 2px #AA3939, 3px 3px #AA3939, 4px 4px #AA3939, 5px 5px #AA3939, 6px 6px #AA3939, 7px 7px #AA3939;
+  text-align: right; }
 
 .searchform {
-  text-align: center; }
+  text-align: right; }
 
 .search {
-  text-align: center;
+  font-size: 1rem;
+  text-align: right;
   border: none;
   border-bottom: 2px solid #801616;
   background: rgba(255, 255, 255, 0.8);
@@ -24,10 +27,10 @@
   width: 250px; }
 
 .weather {
-  font-size: 2rem;
+  font-size: 3.5vw;
   font-weight: bold;
-  text-shadow: 2px 2px #AA3939;
-  text-align: center;
+  text-shadow: 1px 1px #AA3939, 2px 2px #AA3939, 3px 3px #AA3939;
+  text-align: right;
   margin-bottom: 5px; }
 
 /* Left Bar Links Area */
