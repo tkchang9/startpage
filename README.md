@@ -8,5 +8,5 @@ About
 ------------------------
 Built with webpack. See <i>gh-pages</i> branch or https://tkchang9.github.io/startpage/ for the built version.
 
-Weather is hard coded as Toronto, time is your browser's local time. 
-Links are also hard coded in index.html.
+Weather defaults to Toronto and returns the temperature in metric.
+Time is your browser's local time. 
