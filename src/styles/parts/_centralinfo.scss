@@ -1,23 +1,27 @@
 @import '../constants/color';
+@import '../constants/mixins';
 
 /* Info */
 .central-info {
-    padding-left: 5vw;
-    padding-top: 50vh;
+    flex: 1;
+    justify-self: flex-end;
+    padding: 5rem;
+    align-self: flex-end;
     font-family: Ubuntu;
     color: White;
 }
 .time {
-    font-size: 7rem;
+    font-size: 9vw;
     font-weight: bold;
-    text-shadow: 5px 5px $secondary-color;
-    text-align: center;
+    @include textShadow3D(7, $secondary-color);
+    text-align: right;
 }
 .searchform {
-    text-align: center;
+    text-align: right;
 }
 .search {
-    text-align: center;
+    font-size: 1rem;
+    text-align: right;
     border: none;
     border-bottom: 2px solid $secondary-sub;
     background: rgba(255,255,255,0.8);
@@ -27,9 +31,9 @@
 
 // Weather
 .weather {
-    font-size: 2rem;
+    font-size: 3.5vw;
     font-weight: bold;
-    text-shadow: 2px 2px $secondary-color;
-    text-align: center;
+    @include textShadow3D(3, $secondary-color);
+    text-align: right;
     margin-bottom: 5px;
 }
